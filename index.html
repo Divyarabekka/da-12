@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+    background-color: rgb(232, 232, 232);
+}
+
+.inbox{
+    background-color: rgb(12, 177, 34);
+    padding: 20px 5px;
+    margin: 20px 0px;
+    height: 500px;
+}
+
+.box{
+    padding: 60px 20px;
+    margin: 20px 20px;
+    background-color: rgb(5, 73, 73);
+    height: 600px;
+    width: 1200px;
+}
+select {
+  width: 50%;
+  padding: 0px 0px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+.row::after {
+  content:"";
+  display: table;
+  clear: both;
+  margin: left;
+}
+.col-75 {
+  float: left;
+  width: 45%;
+  margin-top: 2px;
+}
+.col-25 {
+  float: left;
+  width: 45%;
+  margin-top: 4px;
+}
+.row
+{
+    justify-content: center;
+}
+.image
+{
+    padding: 2%;
+}
+    </style>
+</head>
+<body>
+<div class="box">
+ <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="inbox text-center">
+                <h2>Event</h2>
+            
+                <div class="image">
+                    <img src="https://www.groovypost.com/wp-content/uploads/2022/09/calendar-example.png" alt="flower" width="400" height="200">
+                  </div>
+            
+                <form>
+                    <label><b>Name</label><input type="text"><br>
+                    <label>E-mail:</label><input type="text"><br>
+                    <label><b>Date :</label>
+                    <select id="date" name="date">
+                    <option value="1" >jun-1-2023</option>
+                    <option value="2">jun-2</option>
+                    <option value="3">jun-3</option>
+                    </select>
+                    <div class="row">
+                        <div class="col-25">
+                          <label for="country">Seats available :</label>
+                          </div><br>
+                           <div class="col-75">
+                            <select id="num" name="num">
+                            <option value="num">10</option>
+                            <option value="num">20</option>
+                            <option value="num">30</option>
+                          </select>
+                         </div>
+                        </div><br>
+                        <div class="row" >
+                        <input type="submit" value="Submit" >
+                      </div>
+                      
+                      </div>
+            </div>
+            
+                  </form>
+            </div>
+        </div>
+
+
+    
+
+
+
+ </div>
+</body>
+</html>
